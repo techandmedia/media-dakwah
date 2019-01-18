@@ -1,5 +1,6 @@
 {
-  "name": "react-antd-rewired",
+  "name": "media-dakwah",
+  "author": "Eko Andri Subarnanto",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
