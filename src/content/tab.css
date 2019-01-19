@@ -1,0 +1,12 @@
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+  border-color: rgba(255, 68, 0, 0.199);
+}
+
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
+  font-weight: 400;
+  background: rgb(8, 84, 155);
+  /* color: #1890ff; */
+  color: wheat;
+  padding-bottom: 1px;
+  border-color: rgba(255, 69, 0, 1);
+}

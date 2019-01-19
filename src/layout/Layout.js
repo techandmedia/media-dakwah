@@ -10,8 +10,6 @@ export default class MainLayout extends React.Component {
   };
 
   handleClick = e => {
-    // e.preventDefault();
-    // console.log("click ", e);
     this.setState({
       currentKey: e.key
     });
@@ -42,11 +40,11 @@ export default class MainLayout extends React.Component {
           collapsedWidth="0"
           // collapsed={collapsed}
           onBreakpoint={broken => {
-            console.log("broken", broken);
+            // console.log("broken", broken);
           }}
           onCollapse={(collapsed, type) => {
             onSiderChange(collapsed);
-            console.log("cc", collapsed, type);
+            // console.log("cc", collapsed, type);
           }}
         >
           <div className="logo" />
@@ -70,21 +68,11 @@ export default class MainLayout extends React.Component {
             </Menu.Item>
             <Menu.Item key="register">
               <Icon type="user" />
-              <span
-                className="nav-text"
-                // onClick={this.props.onRouteChange("register")}
-              >
-                Daftar
-              </span>
+              <span className="nav-text">Daftar</span>
             </Menu.Item>
             <Menu.Item key="signin">
               <Icon type="user" />
-              <span
-                className="nav-text"
-                // onClick={this.props.onRouteChange("signin")}
-              >
-                Login
-              </span>
+              <span className="nav-text">Login</span>
             </Menu.Item>
           </Menu>
         </Sider>

@@ -1,11 +1,10 @@
 import React from "react";
 import { List, Card } from "antd";
-import placeholder from '../../utils/placeholder.jpg'
+import placeholder from "../../utils/placeholder.jpg";
 
 const { Meta } = Card;
 
-export default function TopBerita({data}) {
-  
+export default function TopBerita({ data }) {
   return (
     <List
       grid={{
@@ -13,7 +12,7 @@ export default function TopBerita({data}) {
         xs: 1,
         sm: 2,
         md: 3,
-        lg: 4,
+        lg: 4
       }}
       dataSource={data}
       renderItem={item => (
@@ -21,13 +20,16 @@ export default function TopBerita({data}) {
           <Card
             style={{ marginBottom: 10 }}
             // src={item.src}
-            cover={<img alt="example" src={placeholder} style={{height: 150}}/>}
+            cover={
+              <img
+                alt="example"
+                src={placeholder}
+                style={{ height: "auto", maxWidth: "100%" }}
+              />
+            }
             actions={[<p>Pesan</p>, <p>Chat</p>, <p>Profil</p>]}
           >
-            <Meta
-              title={item.name}
-              description={item.address}
-            />
+            <Meta title={item.name} description={item.address} />
           </Card>
         </List.Item>
       )}

@@ -21,7 +21,7 @@ class App extends Component {
     statusData: false,
     topBerita: [],
     semuaData: [],
-    route: "signin"
+    route: "home"
   };
 
   componentDidMount() {
@@ -106,7 +106,7 @@ class App extends Component {
       semuaData,
       route
     } = this.state;
-    console.log(route);
+    // console.log(route);
     const { onRouteChange, onSiderChange } = this;
 
     return (
