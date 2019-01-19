@@ -6,7 +6,7 @@ const { Header, Content, Footer, Sider } = Layout;
 export default function MainLayout(props) {
   // console.log(props);
   return (
-    <Layout style={{ height: "100vh" }}>
+    <Layout>
       <Sider
         breakpoint="lg"
         collapsedWidth="0"
@@ -23,20 +23,24 @@ export default function MainLayout(props) {
           <Menu.Item key="1">
             <Icon type="user" />
 
-            <span className="nav-text">Home</span>
+            <span className="nav-text">Peta Dakwah</span>
           </Menu.Item>
           <Menu.Item key="2">
             <Icon type="video-camera" />
 
-            <span className="nav-text">About</span>
+            <span className="nav-text">Cari Dai</span>
           </Menu.Item>
           <Menu.Item key="3">
             <Icon type="upload" />
-            <span className="nav-text">Contact</span>
+            <span className="nav-text">Cari Khotib</span>
           </Menu.Item>
           <Menu.Item key="4">
             <Icon type="user" />
-            <span className="nav-text">nav 4</span>
+            <span className="nav-text">Daftar</span>
+          </Menu.Item>
+          <Menu.Item key="5">
+            <Icon type="user" />
+            <span className="nav-text">Login</span>
           </Menu.Item>
         </Menu>
       </Sider>
@@ -59,8 +63,16 @@ export default function MainLayout(props) {
           </div>
         </Content>
 
-        <Footer style={{ textAlign: "center" }}>
-          Ant Design ©2018 Created by Ant UED
+        <Footer style={{ textAlign: "center", lineHeight: 1 }}>
+          <a
+            href="https://subarnanto.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "grey" }}
+          >
+            Created by Eko Andri Subarnanto <br />
+            <span>Web Developer and Designer</span>
+          </a>
         </Footer>
       </Layout>
     </Layout>

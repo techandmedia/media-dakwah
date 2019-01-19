@@ -1,0 +1,72 @@
+[
+  {
+    "key": "1",
+    "name": "Ustad Abdul Somad Lc. MA",
+    "age": 32,
+    "address": "Jakarta, Indonesia",
+    "tags": ["dai", "khotib"]
+  },
+  {
+    "key": "2",
+    "name": "Ustadz Khalid Basalamah",
+    "age": 42,
+    "address": "Bandung, Indonesia",
+    "tags": ["dai", "khotib"]
+  },
+  {
+    "key": "3",
+    "name": "Ustad Adi Hidayat",
+    "age": 32,
+    "address": "Yogyakarta, Indonesia",
+    "tags": ["dai", "khotib"]
+  },
+  {
+    "key": "4",
+    "name": "Ustadz Syafiq Riza Basalamah",
+    "age": 32,
+    "address": "Surabaya, Indonesia",
+    "tags": ["dai", "khotib"]
+  },
+  {
+    "key": "5",
+    "name": "Ustadz Felix Siauw",
+    "age": 32,
+    "address": "Jakarta, Indonesia",
+    "tags": ["khotib"]
+  },
+  {
+    "key": "6",
+    "name": "Ustadz Muhammad Nur Maulana",
+    "age": 42,
+    "address": "Bandung, Indonesia",
+    "tags": ["dai", "khotib"]
+  },
+  {
+    "key": "7",
+    "name": "Ustadz Shaleh Mahmud",
+    "age": 32,
+    "address": "Yogyakarta, Indonesia",
+    "tags": ["khotib"]
+  },
+  {
+    "key": "8",
+    "name": "Mama Dedeh",
+    "age": 32,
+    "address": "Surabaya, Indonesia",
+    "tags": ["khotib"]
+  },
+  {
+    "key": "9",
+    "name": "Ustadzah Ummi Qurrota 'Ayunin",
+    "age": 32,
+    "address": "Jakarta, Indonesia",
+    "tags": ["khotib"]
+  },
+  {
+    "key": "10",
+    "name": "Ustadz Zacky Mirza",
+    "age": 32,
+    "address": "Jakarta, Indonesia",
+    "tags": ["khotib"]
+  }
+]

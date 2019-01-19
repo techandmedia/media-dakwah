@@ -1,0 +1,74 @@
+[
+  {
+    "key": 1,
+    "name": "Ustad Abdul Somad Lc. MA",
+    "src": "https://poskonews.com/wp-content/uploads/2018/10/Profil-dan-Biografi-Ustadz-Abdul.jpg",
+    "address": "Jakarta, Indonesia",
+    "dai": 1,
+    "khotib": 0
+  },
+  {
+    "key": 2,
+    "name": "Ustadz Khalid Basalamah",
+    "src": "https://2.bp.blogspot.com/-7etnaja8PO4/WUOQAwClScI/AAAAAAAAE-E/QtiYG3AwHswxCWNOyATAWDjmphmOq3buwCLcBGAs/s1600/ustadz%2Bkhalid%2Bbasalamah%2Bbiografi%2Bbeliau.jpg",
+    "address": "Bandung, Indonesia",
+    "dai": 1,
+    "khotib": 0
+  },
+  {
+    "key": 3,
+    "name": "Ustad Adi Hidayat",
+    "src": "http://cdn2.tstatic.net/wartakota/foto/bank/images/20180709-ust-adi-hidayat_20180709_110520.jpg",
+    "address": "Yogyakarta, Indonesia",
+    "dai": 1,
+    "khotib": 0
+  },
+  {
+    "key": 4,
+    "name": "Ustadz Syafiq Riza Basalamah",
+    "src": "https://3.bp.blogspot.com/-G9KQ53ILubc/WRUjE_WeAnI/AAAAAAAAFGU/UrESCyhQevAXfdgRO6ySahpqriBRPJ0fgCLcB/s1600/Syafiq%2BReza%2BBasalamah.png",
+    "address": "Surabaya, Indonesia",
+    "dai": 1,
+    "khotib": 1
+  },
+  {
+    "key": 5,
+    "name": "Ustadz Felix Siauw",
+    "src": "https://www.panjimas.com/wp-content/uploads/2017/07/felix-1.jpg",
+    "address": "Jakarta, Indonesia",
+    "dai": 1,
+    "khotib": 0
+  },
+  {
+    "key": 6,
+    "name": "Ustadz Muhammad Nur Maulana",
+    "src": "http://3.bp.blogspot.com/-X7gZIIwm1Hs/VknZo0de2nI/AAAAAAAABAw/fptmOUO_nJg/s1600/images.jpg",
+    "address": "Bandung, Indonesia",
+    "dai": 0,
+    "khotib": 1
+  },
+  {
+    "key": 7,
+    "name": "Ustadz Shaleh Mahmud",
+    "src": "https://1.bp.blogspot.com/-347f-HUv7KM/V8aIi11JYZI/AAAAAAAAAUA/DwKsoOb_TSslQk-bcNaBIZMfNujWqNpZACLcB/s1600/ustadz-solmed.jpg",
+    "address": "Yogyakarta, Indonesia",
+    "dai": 0,
+    "khotib": 1
+  },
+  {
+    "key": 8,
+    "name": "Mama Dedeh",
+    "src": "http://detik007.com/wp-content/uploads/2018/05/mah.jpeg",
+    "address": "Surabaya, Indonesia",
+    "dai": 0,
+    "khotib": 1
+  },
+  {
+    "key": 9,
+    "name": "Ustadz Zacky Mirza",
+    "src": "http://demonews.kabarbuton.com/file/upload/Ustaz.jpg",
+    "address": "Jakarta, Indonesia",
+    "dai": 0,
+    "khotib": 1
+  }
+]
