@@ -21,7 +21,7 @@ class App extends Component {
     statusData: false,
     topBerita: [],
     semuaData: [],
-    route: "register"
+    route: "signin"
   };
 
   componentDidMount() {

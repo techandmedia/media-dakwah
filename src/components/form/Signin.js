@@ -66,7 +66,7 @@ class SignIn extends React.Component {
         // align="middle"
         // style={{ height: "65vh" }}
       >
-        <Col xs={24} md={12}>
+        <Col xs={24} sm={14} md={10} lg={8}>
           <Form onSubmit={this.handleSubmit} className="login-form">
             <FormItem>
               {getFieldDecorator("email", {
@@ -129,7 +129,7 @@ class SignIn extends React.Component {
           */}
           <Button
             type="primary"
-            className="login-form register-form-button"
+            className="register-form-button"
             onClick={this.props.onRouteChange.bind(this, "register")}
           >
             Daftar
