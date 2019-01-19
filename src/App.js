@@ -72,7 +72,12 @@ class App extends Component {
       this.setState({
         route: "register"
       });
+    } else if (route === "signin") {
+      this.setState({
+        route: "signin"
+      });
     }
+    // return null;
     this.setState({ route: route });
   };
 
@@ -99,20 +104,21 @@ class App extends Component {
       topBerita,
       statusData,
       semuaData,
-      route,
+      route
     } = this.state;
-    // console.log(statusData);
+    console.log(route);
+    const { onRouteChange, onSiderChange } = this;
 
     return (
       <MainLayout
-        onSiderChange={this.onSiderChange}
-        onRouteChange={this.onRouteChange}
+        onSiderChange={onSiderChange}
+        onRouteChange={onRouteChange}
         header={<Header siderStatus={siderStatus} />}
       >
         {route === "register" ? (
-          <Register />
+          <Register onRouteChange={onRouteChange} />
         ) : route === "signin" ? (
-          <SignIn />
+          <SignIn onRouteChange={onRouteChange} />
         ) : (
           <TabContent
             key={statusData}

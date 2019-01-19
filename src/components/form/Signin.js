@@ -1,6 +1,6 @@
 import React from "react";
 import { Form, Icon, Input, Checkbox, Row, Col, Button } from "antd";
-import { success, error } from "../basic/InformationModal";
+// import { success, error } from "../basic/InformationModal";
 
 // import { loginUser } from "../data/PostData";
 import "./signin.css";
@@ -19,8 +19,8 @@ class SignIn extends React.Component {
   handleSubmit = e => {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
-      const email = values.email;
-      const password = values.password;
+      // const email = values.email;
+      // const password = values.password;
       if (!err) {
         // loginUser(this.props.URL, email, password).then(response => {
         //   const user = response.data[0];
@@ -106,7 +106,7 @@ class SignIn extends React.Component {
               {getFieldDecorator("remember", {
                 valuePropName: "checked",
                 initialValue: true
-              })(<Checkbox>Remember me</Checkbox>)}
+              })(<Checkbox>Ingat Saya</Checkbox>)}
               <a className="login-form-forgot" href="/">
                 Lupa password
               </a>{" "}
@@ -118,16 +118,22 @@ class SignIn extends React.Component {
               >
                 Masuk
               </Button>
-              <br />
-              <Button
-                type="primary"
-                htmlType="submit"
-                className="login-form-button"
-              >
-                Daftar
-              </Button>
             </FormItem>
           </Form>
+          {/* method ini harus diletakkan di luar Form, karena 
+          clash dengan method Form Submit, lalu, method ini harus
+          di bind, supaya tidak langsung dicall,
+          atau bisa juga dengan (e)=>method(e,'register')
+          Tapi dengan arrow akan re-render
+          Dengan bind, tidak akan re-render
+          */}
+          <Button
+            type="primary"
+            className="login-form register-form-button"
+            onClick={this.props.onRouteChange.bind(this, "register")}
+          >
+            Daftar
+          </Button>
         </Col>
       </Row>
     );

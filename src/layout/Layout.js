@@ -10,21 +10,19 @@ export default class MainLayout extends React.Component {
   };
 
   handleClick = e => {
+    // e.preventDefault();
     // console.log("click ", e);
     this.setState({
       currentKey: e.key
     });
     if (e.key === "signin") {
       this.props.onRouteChange("signin");
-      // this.setState({
-      //   collapsed: false
-      // });
     } else if (e.key === "register") {
       this.props.onRouteChange("register");
     } else if (e.key === "logout") {
       this.props.onRouteChange("home");
-    } else if (e.key === "siakad") {
-      this.props.onRouteChange("tentang-siakad");
+    } else if (e.key === "home") {
+      this.props.onRouteChange("home");
     } else {
       return null;
     }
@@ -58,7 +56,7 @@ export default class MainLayout extends React.Component {
             onClick={this.handleClick}
             selectedKeys={[this.state.current]}
           >
-            <Menu.Item key="peta">
+            <Menu.Item key="home">
               <Icon type="user" />
               <span className="nav-text">Peta Dakwah</span>
             </Menu.Item>
@@ -72,11 +70,21 @@ export default class MainLayout extends React.Component {
             </Menu.Item>
             <Menu.Item key="register">
               <Icon type="user" />
-              <span className="nav-text">Daftar</span>
+              <span
+                className="nav-text"
+                // onClick={this.props.onRouteChange("register")}
+              >
+                Daftar
+              </span>
             </Menu.Item>
             <Menu.Item key="signin">
               <Icon type="user" />
-              <span className="nav-text">Login</span>
+              <span
+                className="nav-text"
+                // onClick={this.props.onRouteChange("signin")}
+              >
+                Login
+              </span>
             </Menu.Item>
           </Menu>
         </Sider>

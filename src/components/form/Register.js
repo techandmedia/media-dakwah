@@ -11,7 +11,7 @@ import {
   // AutoComplete
   // Card
 } from "antd";
-import { success, error, info, warning } from "../basic/InformationModal";
+// import { success, error, info, warning } from "../basic/InformationModal";
 
 import "./signin.css";
 
@@ -19,7 +19,7 @@ import "./signin.css";
 
 const FormItem = Form.Item;
 const Option = Select.Option;
-const { Meta } = Card;
+// const { Meta } = Card;
 // const AutoCompleteOption = AutoComplete.Option;
 
 class RegistrationForm extends React.Component {
@@ -39,11 +39,11 @@ class RegistrationForm extends React.Component {
   handleSubmit = e => {
     e.preventDefault();
     this.props.form.validateFieldsAndScroll((err, values) => {
-      const first_name = values.first_name;
-      const last_name = values.last_name;
-      const email = values.email;
-      const password = values.password;
-      const role = values.role;
+      // const first_name = values.first_name;
+      // const last_name = values.last_name;
+      // const email = values.email;
+      // const password = values.password;
+      // const role = values.role;
 
       // if (!err) {
       //   registerUser(
@@ -112,9 +112,9 @@ class RegistrationForm extends React.Component {
     this.setState({ autoCompleteResult });
   };
 
-  infoClick() {
-    info("Fitur ini belum tersedia", "Silahkan kembali lagi nanti");
-  }
+  // infoClick() {
+  //   info("Fitur ini belum tersedia", "Silahkan kembali lagi nanti");
+  // }
 
   render() {
     const { getFieldDecorator } = this.props.form;
@@ -161,7 +161,7 @@ class RegistrationForm extends React.Component {
         justify="center"
         // style={{ marginTop: "1em", padding: "1em" }}
       >
-        <Col xs={24} md={12}>
+        <Col xs={24} md={14}>
           <Card
             title="Demo Register"
             headStyle={{
@@ -197,7 +197,7 @@ class RegistrationForm extends React.Component {
                       whitespace: false
                     }
                   ]
-                })(<Input placeholder="Nama Depan Anda" />)}
+                })(<Input placeholder="Nama Belakang Anda" />)}
               </FormItem>
               <FormItem {...formItemLayout} label="E-mail">
                 {getFieldDecorator("email", {
@@ -237,7 +237,7 @@ class RegistrationForm extends React.Component {
                     }
                   ]
                 })(
-                  <Select placeholder="Pilih Status/Role Anda">
+                  <Select placeholder="Pilih Status/Jabatan Anda">
                     <Option value="Dai">Dai</Option>
                     <Option value="Khotib">Khotib</Option>
                     <Option value="Umum">Umum</Option>
@@ -296,7 +296,10 @@ class RegistrationForm extends React.Component {
                   </Col>
                 </Row>
               </FormItem> */}
-              <FormItem {...tailFormItemLayout}>
+              <FormItem
+                {...tailFormItemLayout}
+                style={{ marginBottom: "5px" }}
+              >
                 {getFieldDecorator("agreement", {
                   valuePropName: "checked"
                 })(
@@ -310,6 +313,7 @@ class RegistrationForm extends React.Component {
                   type="primary"
                   htmlType="submit"
                   className="login-form-button"
+                  // style={{marginTop:"-30px"}}
                 >
                   Register
                 </Button>
