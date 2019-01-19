@@ -1,6 +1,8 @@
 import React from "react";
 import { Card, List } from "antd";
 
+import placeholder from "../../utils/placeholder.jpg";
+
 const data = [
   {
     key: 1,
@@ -52,7 +54,7 @@ export default function TopBerita() {
         <List.Item>
           <Card
             style={{ marginBottom: 10 }}
-            cover={<img alt="example" src={item.src} />}
+            cover={<img alt="example" src={placeholder} />}
             actions={[<p>Like</p>, <p>Komentar</p>, <p>Simpan</p>]}
           >
             <p style={{ fontWeight: 500, fontSize: 16, lineHeight: 1.2 }}>

@@ -1,5 +1,6 @@
 import React from "react";
 import { List, Card } from "antd";
+import placeholder from '../../utils/placeholder.jpg'
 
 const { Meta } = Card;
 
@@ -19,7 +20,8 @@ export default function TopBerita({data}) {
         <List.Item>
           <Card
             style={{ marginBottom: 10 }}
-            cover={<img alt="example" src={item.src} style={{height: 150}}/>}
+            // src={item.src}
+            cover={<img alt="example" src={placeholder} style={{height: 150}}/>}
             actions={[<p>Pesan</p>, <p>Chat</p>, <p>Profil</p>]}
           >
             <Meta

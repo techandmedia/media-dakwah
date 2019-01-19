@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import MainLayout from "./layout/Layout";
 import Header from "./layout/Header";
 
+import Register from "./components/form/Register";
+import SignIn from "./components/form/Signin";
 // import HomeContent from "./content/homepage";
 // import JudulContent from "./content/JudulContent";
 
@@ -9,7 +11,6 @@ import TabContent from "./content/TabContent";
 import Top5 from "./components/table/Top5";
 
 import { getDummy, getBerita } from "./utils/GetData";
-// import SignIn from "./components/form/Signin";
 import "./App.css";
 
 class App extends Component {
@@ -19,7 +20,8 @@ class App extends Component {
     topKhotib: [],
     statusData: false,
     topBerita: [],
-    semuaData: []
+    semuaData: [],
+    route: "register"
   };
 
   componentDidMount() {
@@ -65,6 +67,15 @@ class App extends Component {
     });
   };
 
+  onRouteChange = route => {
+    if (route === "register") {
+      this.setState({
+        route: "register"
+      });
+    }
+    this.setState({ route: route });
+  };
+
   // Ini fungsi supaya pada saat lebar layar kurang dari 415px
   // dan tombol collapsed nya ditekan, maka title{display: none}
   onSiderChange = event => {
@@ -87,24 +98,31 @@ class App extends Component {
       topKhotib,
       topBerita,
       statusData,
-      semuaData
+      semuaData,
+      route,
     } = this.state;
     // console.log(statusData);
 
     return (
       <MainLayout
         onSiderChange={this.onSiderChange}
+        onRouteChange={this.onRouteChange}
         header={<Header siderStatus={siderStatus} />}
       >
-        {/* <JudulContent /> */}
-        <TabContent
-          key={statusData}
-          // berita={<Top5 data={topBerita} />}
-          data={topBerita}
-          dai={<Top5 data={topDai} />}
-          khotib={<Top5 data={topKhotib} />}
-          semua={<Top5 data={semuaData} />}
-        />
+        {route === "register" ? (
+          <Register />
+        ) : route === "signin" ? (
+          <SignIn />
+        ) : (
+          <TabContent
+            key={statusData}
+            // berita={<Top5 data={topBerita} />}
+            data={topBerita}
+            dai={<Top5 data={topDai} />}
+            khotib={<Top5 data={topKhotib} />}
+            semua={<Top5 data={semuaData} />}
+          />
+        )}
         {/* <HomeContent />
         <SignIn /> */}
       </MainLayout>

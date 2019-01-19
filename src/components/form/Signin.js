@@ -1,8 +1,5 @@
 import React from "react";
-import { Form, Icon, Input, Checkbox, Row, Col } from "antd";
-
-import { NormalCard as Card } from "../basic/Card";
-import { BaseButton as Button } from "../basic/Button";
+import { Form, Icon, Input, Checkbox, Row, Col, Button } from "antd";
 import { success, error } from "../basic/InformationModal";
 
 // import { loginUser } from "../data/PostData";
@@ -66,10 +63,10 @@ class SignIn extends React.Component {
       <Row
         type="flex"
         justify="center"
-        align="middle"
+        // align="middle"
         // style={{ height: "65vh" }}
       >
-        <Col xs={24} s={24} md={12}>
+        <Col xs={24} md={12}>
           <Form onSubmit={this.handleSubmit} className="login-form">
             <FormItem>
               {getFieldDecorator("email", {
@@ -106,13 +103,14 @@ class SignIn extends React.Component {
             </FormItem>
 
             <FormItem>
-              {/* {getFieldDecorator("remember", {
+              {getFieldDecorator("remember", {
                 valuePropName: "checked",
                 initialValue: true
-              })(<Checkbox>Remember me</Checkbox>)} */}
+              })(<Checkbox>Remember me</Checkbox>)}
               <a className="login-form-forgot" href="/">
                 Lupa password
-              </a>
+              </a>{" "}
+              <br />
               <Button
                 type="primary"
                 htmlType="submit"
@@ -120,6 +118,7 @@ class SignIn extends React.Component {
               >
                 Masuk
               </Button>
+              <br />
               <Button
                 type="primary"
                 htmlType="submit"
