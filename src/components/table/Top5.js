@@ -1,10 +1,10 @@
 import React from "react";
 import { List, Card } from "antd";
-import placeholder from "../../utils/placeholder.jpg";
+// import placeholder from "../../utils/placeholder.jpg";
 
 const { Meta } = Card;
 
-export default function TopBerita({ data }) {
+export default function Top5({ data }) {
   return (
     <List
       grid={{
@@ -23,7 +23,8 @@ export default function TopBerita({ data }) {
             cover={
               <img
                 alt="example"
-                src={placeholder}
+                // src={placeholder}
+                src={item.src}
                 style={{ height: "auto", maxWidth: "100%" }}
               />
             }

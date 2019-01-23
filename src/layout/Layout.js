@@ -21,6 +21,10 @@ export default class MainLayout extends React.Component {
       this.props.onRouteChange("home");
     } else if (e.key === "home") {
       this.props.onRouteChange("home");
+    } else if (e.key === "provinsi") {
+      this.props.onRouteChange("provinsi");
+    } else if (e.key === "wilayah") {
+      this.props.onRouteChange("wilayah");
     } else {
       return null;
     }
@@ -56,7 +60,15 @@ export default class MainLayout extends React.Component {
           >
             <Menu.Item key="home">
               <Icon type="user" />
-              <span className="nav-text">Peta Dakwah</span>
+              <span className="nav-text">Berita Dakwah</span>
+            </Menu.Item>
+            <Menu.Item key="provinsi">
+              <Icon type="user" />
+              <span className="nav-text">Peta Dakwah Provinsi</span>
+            </Menu.Item>
+            <Menu.Item key="wilayah">
+              <Icon type="user" />
+              <span className="nav-text">Peta Dakwah Kota</span>
             </Menu.Item>
             <Menu.Item key="dai">
               <Icon type="video-camera" />

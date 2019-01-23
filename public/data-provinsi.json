@@ -1,0 +1,323 @@
+[
+  {
+    "key": 1,
+    "provinsi": "Aceh",
+    "populasi": "4.906.835",
+    "jumlahDaiProvinsi": 50,
+    "sekolahUmum": 12,
+    "sekolahAgama": 15,
+    "jumlahMesjid": 25,
+    "jumlahMushola": 54
+  },
+  {
+    "key": 2,
+    "provinsi": "Bali",
+    "populasi": "4.104.900",
+    "jumlahDaiProvinsi": 15,
+    "sekolahUmum": 15,
+    "sekolahAgama": 10,
+    "jumlahMesjid": 18,
+    "jumlahMushola": 14
+  },
+  {
+    "key": 3,
+    "provinsi": "Banten",
+    "populasi": "11.704.877",
+    "jumlahDaiProvinsi": 150,
+    "sekolahUmum": 120,
+    "sekolahAgama": 150,
+    "jumlahMesjid": 50,
+    "jumlahMushola": 90
+  },
+  {
+    "key": 4,
+    "provinsi": "Bengkulu",
+    "populasi": "1.844.800",
+    "jumlahDaiProvinsi": 55,
+    "sekolahUmum": 90,
+    "sekolahAgama": 76,
+    "jumlahMesjid": 45,
+    "jumlahMushola": 77
+  },
+  {
+    "key": 5,
+    "provinsi": "Gorontalo",
+    "populasi": "1.115.633",
+    "jumlahDaiProvinsi": 37,
+    "sekolahUmum": 34,
+    "sekolahAgama": 13,
+    "jumlahMesjid": 13,
+    "jumlahMushola": 25
+  },
+  {
+    "key": 6,
+    "id_kota": 6,
+    "provinsi": "Jakarta",
+    "populasi": "10.012.271",
+    "jumlahDaiProvinsi": 199,
+    "sekolahUmum": 120,
+    "sekolahAgama": 150,
+    "jumlahMesjid": 250,
+    "jumlahMushola": 540
+  },
+  {
+    "key": 8,
+    "provinsi": "Jawa Barat",
+    "populasi": "46.029.668",
+    "jumlahDaiProvinsi": 216,
+    "sekolahUmum": 300,
+    "sekolahAgama": 145,
+    "jumlahMesjid": 250,
+    "jumlahMushola": 540
+  },
+  {
+    "key": 9,
+    "provinsi": "Jawa Tengah",
+    "populasi": "33.522.663",
+    "jumlahDaiProvinsi": 112,
+    "sekolahUmum": 120,
+    "sekolahAgama": 150,
+    "jumlahMesjid": 221,
+    "jumlahMushola": 345
+  },
+  {
+    "key": 10,
+    "provinsi": "Jawa Timur",
+    "populasi": "38.610.202",
+    "jumlahDaiProvinsi": 221,
+    "sekolahUmum": 223,
+    "sekolahAgama": 190,
+    "jumlahMesjid": 340,
+    "jumlahMushola": 546
+  },
+  {
+    "key": 11,
+    "provinsi": "Kalimantan Barat",
+    "populasi": "4.716.093",
+    "jumlahDaiProvinsi": 97,
+    "sekolahUmum": 34,
+    "sekolahAgama": 35,
+    "jumlahMesjid": 25,
+    "jumlahMushola": 34
+  },
+  {
+    "key": 12,
+    "provinsi": "Kalimantan Selatan",
+    "populasi": "3.922.790",
+    "jumlahDaiProvinsi": 80,
+    "sekolahUmum": 42,
+    "sekolahAgama": 65,
+    "jumlahMesjid": 55,
+    "jumlahMushola": 74
+  },
+  {
+    "key": 13,
+    "provinsi": "Kalimantan Tengah",
+    "populasi": "2.493.858",
+    "jumlahDaiProvinsi": 90,
+    "sekolahUmum": 44,
+    "sekolahAgama": 78,
+    "jumlahMesjid": 48,
+    "jumlahMushola": 60
+  },
+  {
+    "key": 14,
+    "provinsi": "Kalimantan Timur",
+    "populasi": "3.351.432",
+    "jumlahDaiProvinsi": 99,
+    "sekolahUmum": 67,
+    "sekolahAgama": 66,
+    "jumlahMesjid": 57,
+    "jumlahMushola": 58
+  },
+  {
+    "key": 15,
+    "provinsi": "Kalimantan Utara",
+    "populasi": "618.384",
+    "jumlahDaiProvinsi": 20,
+    "sekolahUmum": 78,
+    "sekolahAgama": 75,
+    "jumlahMesjid": 35,
+    "jumlahMushola": 84
+  },
+  {
+    "key": 16,
+    "provinsi": "Kepulauan Bangka Belitung",
+    "populasi": "1.343.900",
+    "jumlahDaiProvinsi": 23,
+    "sekolahUmum": 33,
+    "sekolahAgama": 55,
+    "jumlahMesjid": 65,
+    "jumlahMushola": 74
+  },
+  {
+    "key": 17,
+    "provinsi": "Kepualauan Riau",
+    "populasi": "1.917.415",
+    "jumlahDaiProvinsi": 27,
+    "sekolahUmum": 56,
+    "sekolahAgama": 75,
+    "jumlahMesjid": 58,
+    "jumlahMushola": 56
+  },
+  {
+    "key": 18,
+    "provinsi": "Lampung",
+    "populasi": "8.026.191",
+    "jumlahDaiProvinsi": 90,
+    "sekolahUmum": 57,
+    "sekolahAgama": 57,
+    "jumlahMesjid": 32,
+    "jumlahMushola": 34
+  },
+  {
+    "key": 19,
+    "provinsi": "Maluku",
+    "populasi": "1.657.409",
+    "jumlahDaiProvinsi": 66,
+    "sekolahUmum": 32,
+    "sekolahAgama": 35,
+    "jumlahMesjid": 45,
+    "jumlahMushola": 46
+  },
+  {
+    "key": 20,
+    "provinsi": "Maluku Utara",
+    "populasi": "1.138.667",
+    "jumlahDaiProvinsi": 33,
+    "sekolahUmum": 23,
+    "sekolahAgama": 25,
+    "jumlahMesjid": 27,
+    "jumlahMushola": 29
+  },
+  {
+    "key": 21,
+    "provinsi": "Nusa Tenggara Barat",
+    "populasi": "4.773.795",
+    "jumlahDaiProvinsi": 22,
+    "sekolahUmum": 12,
+    "sekolahAgama": 15,
+    "jumlahMesjid": 35,
+    "jumlahMushola": 34
+  },
+  {
+    "key": 22,
+    "provinsi": "Nusa Tenggara Timur",
+    "populasi": "5.036.897",
+    "jumlahDaiProvinsi": 33,
+    "sekolahUmum": 22,
+    "sekolahAgama": 25,
+    "jumlahMesjid": 25,
+    "jumlahMushola": 24
+  },
+  {
+    "key": 23,
+    "provinsi": "Papua",
+    "populasi": "3.091.047",
+    "jumlahDaiProvinsi": 67,
+    "sekolahUmum": 12,
+    "sekolahAgama": 15,
+    "jumlahMesjid": 12,
+    "jumlahMushola": 14
+  },
+  {
+    "key": 24,
+    "provinsi": "Papua Barat",
+    "populasi": "849.809",
+    "jumlahDaiProvinsi": 10,
+    "sekolahUmum": 11,
+    "sekolahAgama": 11,
+    "jumlahMesjid": 15,
+    "jumlahMushola": 14
+  },
+  {
+    "key": 25,
+    "provinsi": "Riau",
+    "populasi": "6.188.442",
+    "jumlahDaiProvinsi": 150,
+    "sekolahUmum": 78,
+    "sekolahAgama": 79,
+    "jumlahMesjid": 89,
+    "jumlahMushola": 112
+  },
+  {
+    "key": 26,
+    "provinsi": "Sulawesi Barat",
+    "populasi": "1.258.090",
+    "jumlahDaiProvinsi": 69,
+    "sekolahUmum": 48,
+    "sekolahAgama": 49,
+    "jumlahMesjid": 55,
+    "jumlahMushola": 67
+  },
+  {
+    "key": 27,
+    "provinsi": "Sulawesi Selatan",
+    "populasi": "8,432,163",
+    "jumlahDaiProvinsi": 88,
+    "sekolahUmum": 33,
+    "sekolahAgama": 53,
+    "jumlahMesjid": 39,
+    "jumlahMushola": 74
+  },
+  {
+    "key": 28,
+    "provinsi": "Sulawesi Tenggara",
+    "populasi": "2.448.081",
+    "jumlahDaiProvinsi": 10,
+    "sekolahUmum": 12,
+    "sekolahAgama": 35,
+    "jumlahMesjid": 35,
+    "jumlahMushola": 44
+  },
+  {
+    "key": 29,
+    "provinsi": "Sulawesi Utara",
+    "populasi": "2.386.604",
+    "jumlahDaiProvinsi": 30,
+    "sekolahUmum": 10,
+    "sekolahAgama": 21,
+    "jumlahMesjid": 25,
+    "jumlahMushola": 24
+  },
+  {
+    "key": 30,
+    "provinsi": "Sumatera Barat",
+    "populasi": "5.131.900",
+    "jumlahDaiProvinsi": 110,
+    "sekolahUmum": 22,
+    "sekolahAgama": 25,
+    "jumlahMesjid": 35,
+    "jumlahMushola": 44
+  },
+  {
+    "key": 31,
+    "provinsi": "Sumatera Selatan",
+    "populasi": "7.941.500",
+    "jumlahDaiProvinsi": 157,
+    "sekolahUmum": 120,
+    "sekolahAgama": 150,
+    "jumlahMesjid": 90,
+    "jumlahMushola": 184
+  },
+  {
+    "key": 32,
+    "provinsi": "Sumatera Utara",
+    "populasi": "13.766.851",
+    "jumlahDaiProvinsi": 250,
+    "sekolahUmum": 121,
+    "sekolahAgama": 115,
+    "jumlahMesjid": 125,
+    "jumlahMushola": 154
+  },
+  {
+    "key": 33,
+    "provinsi": "Yogyakarta",
+    "populasi": "3.553.100",
+    "jumlahDaiProvinsi": 50,
+    "sekolahUmum": 89,
+    "sekolahAgama": 85,
+    "jumlahMesjid": 45,
+    "jumlahMushola": 84
+  }
+]

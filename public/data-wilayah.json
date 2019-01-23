@@ -1,0 +1,32 @@
+[
+  {
+    "key": 1,
+    "id_kota": 6,
+    "kota": "Jakarta Utara",
+    "jumlahDai": 5
+  },
+  {
+    "key": 2,
+    "id_kota": 6,
+    "kota": "Jakarta Barat",
+    "jumlahDai": 10
+  },
+  {
+    "key": 3,
+    "id_kota": 6,
+    "kota": "Jakarta Timur",
+    "jumlahDai": 20
+  },
+  {
+    "key": 4,
+    "id_kota": 6,
+    "kota": "Jakarta Pusat",
+    "jumlahDai": 15
+  },
+  {
+    "key": 5,
+    "id_kota": 6,
+    "kota": "Jakarta Selatan",
+    "jumlahDai": 9
+  }
+]

@@ -4,13 +4,14 @@ import Header from "./layout/Header";
 
 import Register from "./components/form/Register";
 import SignIn from "./components/form/Signin";
-// import HomeContent from "./content/homepage";
-// import JudulContent from "./content/JudulContent";
+import PetaProvinsi from "./components/form/PetaProvinsi";
+import PetaWilayah from "./components/form/PetaWilayah";
 
 import TabContent from "./content/TabContent";
 import Top5 from "./components/table/Top5";
+import TopBerita from "./components/card/TopBerita";
 
-import { getDummy, getBerita } from "./utils/GetData";
+import { getDummy, getBerita, getPeta, getProvinsi } from "./utils/GetData";
 import "./App.css";
 
 class App extends Component {
@@ -21,12 +22,16 @@ class App extends Component {
     statusData: false,
     topBerita: [],
     semuaData: [],
+    petaData: [],
+    provinsi: [],
     route: "home"
   };
 
   componentDidMount() {
-    this.getData();
+    this.getDataDai();
     this.getDataBerita();
+    this.getDataPeta();
+    this.getDataProvinsi();
     this.setState({
       statusData: !this.state.statusData
     });
@@ -39,7 +44,25 @@ class App extends Component {
   //   }
   // }
 
-  getData = () => {
+  getDataPeta = () => {
+    getPeta().then(res => {
+      // console.log(res.data);
+      this.setState({
+        petaData: res.data
+      });
+    });
+  };
+
+  getDataProvinsi = () => {
+    getProvinsi().then(res => {
+      // console.log(res.data);
+      this.setState({
+        provinsi: res.data
+      });
+    });
+  };
+
+  getDataDai = () => {
     getDummy().then(res => {
       const { topDai, topKhotib, semuaData } = this.state;
       const data = res.data;
@@ -68,16 +91,6 @@ class App extends Component {
   };
 
   onRouteChange = route => {
-    if (route === "register") {
-      this.setState({
-        route: "register"
-      });
-    } else if (route === "signin") {
-      this.setState({
-        route: "signin"
-      });
-    }
-    // return null;
     this.setState({ route: route });
   };
 
@@ -104,10 +117,13 @@ class App extends Component {
       topBerita,
       statusData,
       semuaData,
+      petaData,
+      provinsi,
       route
     } = this.state;
-    // console.log(route);
+    console.log(topBerita);
     const { onRouteChange, onSiderChange } = this;
+    const dataPeta = petaData;
 
     return (
       <MainLayout
@@ -119,11 +135,15 @@ class App extends Component {
           <Register onRouteChange={onRouteChange} />
         ) : route === "signin" ? (
           <SignIn onRouteChange={onRouteChange} />
+        ) : route === "provinsi" ? (
+          <PetaProvinsi provinsi={provinsi} />
+        ) : route === "wilayah" ? (
+          <PetaWilayah peta={dataPeta} />
         ) : (
           <TabContent
             key={statusData}
             // berita={<Top5 data={topBerita} />}
-            data={topBerita}
+            berita={<TopBerita data={topBerita} />}
             dai={<Top5 data={topDai} />}
             khotib={<Top5 data={topKhotib} />}
             semua={<Top5 data={semuaData} />}
